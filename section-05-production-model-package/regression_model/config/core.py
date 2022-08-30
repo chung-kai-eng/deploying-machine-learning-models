@@ -16,7 +16,8 @@ TRAINED_MODEL_DIR = PACKAGE_ROOT / "trained_models"
 
 class AppConfig(BaseModel):
     """
-    Application-level config.
+    Application-level config. 
+    # For Software Engineering concern
     """
 
     package_name: str
@@ -29,6 +30,7 @@ class ModelConfig(BaseModel):
     """
     All configuration relevant to model
     training and feature engineering.
+    # For Data Science concern
     """
 
     target: str
