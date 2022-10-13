@@ -1,6 +1,11 @@
 from typing import Any, List, Optional
 
 from pydantic import BaseModel
+'''
+The advantage of importing schemas is that if we make an update in the package
+and publish a new version of the package, all we have to do in our requirements.txt
+is increment the version instead of keeping different copy
+'''
 from regression_model.processing.validation import HouseDataInputSchema
 
 
